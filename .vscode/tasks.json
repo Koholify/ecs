@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc build ecs test",
+			"command": "/usr/bin/gcc-9",
+			"args": [
+				"-Wall",
+				"-Werror",
+				"${fileDirname}/*.c",
+				"-o",
+				"${fileDirname}/ecs-trial",
+				"-lSDL2",
+				"-lSDL2_image",
+				"-lSDL2_ttf"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/gcc-9"
+		}
+	]
+}
